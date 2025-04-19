@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>온라인 그림판</title>
+    <style>
+        canvas { border: 1px solid #000; cursor: crosshair; }
+    </style>
+</head>
+<body>
+    <h2>🎨 나만의 그림판</h2>
+    <canvas id="canvas" width="600" height="400"></canvas><br>
+    <label>색상: <input type="color" id="colorPicker"></label>
+    <label>브러시 크기: <input type="range" id="brushSize" min="1" max="20" value="5"></label>
+    <button onclick="clearCanvas()">초기화</button>
+    <button onclick="saveCanvas()">저장</button>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
